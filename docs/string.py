@@ -179,3 +179,14 @@ texte_nettoye = texte.lstrip("!")  # "Bonjour!!!"
 texte = "   Bonjour   "
 texte_nettoye = texte.strip()  # "Bonjour"
 
+# Supprime les lettres 'd', 'n', 'u', 'e' et les espaces au début et à la fin
+texte= "    unaddressed    "
+texte_nettoye.strip('dnue ') # 'address'
+
+
+"""
+    Méthode .title()
+"""
+# Met en capital les premiers charactère de chaque mots 
+man_in_hat = 'the man in the hat.'
+man_in_hat.title() #The Man In The Hat.
