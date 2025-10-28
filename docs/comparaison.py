@@ -72,11 +72,13 @@ employee = {
     "title": "CEO"
 }
 
-print("age" in employee)         # True
-print(33 in employee)            # False
-print(33 in employee.values())    # True
-print("lastname" not in employee)  # True
-# 🔹 Test d'appartenance dans une chaîne
+print("age" in employee)                # True
+print(33 in employee)                   # False
+print(33 in employee.values())          # True
+print(("age", 33) in employee.items())  # True
+print("lastname" not in employee)       # True
+
+# Test d'appartenance dans une chaîne
 name = "Super Batman"
 print("Bat" in name)             # True
 print("Batwoman" in name)        # False
