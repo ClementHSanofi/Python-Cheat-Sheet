@@ -81,6 +81,42 @@ sun_and_moon[:-2:2]   # '🌞🌞🌞🌞'
 sun_and_moon[1:-1:2]  # '🌙🌙🌙🌙'
 
 
+"""
+    Découpage split()
+"""
+cat_ipsum = "Détruire la maison en 5 secondes, se moquer de l'humain."
+cat_ipsum.split()  # ['Détruire', 'la', 'maison', 'en', '5', 'secondes,', 'se', 'moquer', 'de', "l'humain."]
+cat_ipsum.split()[-1]  # "l'humain.
+
+# Avec un séparateur personnalisé
+cat_words = "félin, quadrupède, féroce, poilu"
+cat_words.split(', ')  # ['félin', 'quadrupède', 'féroce', 'poilu']
+
+# Fonctionne sur du multi-caractères
+colors = """rouge,
+orange,
+vert,
+violet,
+jaune"""
+
+colors.split(',\n')  # ['rouge', 'orange', 'vert', 'violet', 'jaune']
+
+
+"""
+    Itération sur caractère
+"""
+exercise = 'လေ့ကျင့်'
+
+for code_point in exercise:
+    print(code_point)
+# Affiche chaque caractère individuellement
+
+for index, code_point in enumerate(exercise):
+    print(index, ": ", code_point)
+# Affiche l’index et le caractère
+
+
+
 
 
 
