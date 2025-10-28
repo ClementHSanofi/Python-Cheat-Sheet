@@ -21,7 +21,7 @@ language = "Ukrainien"
 number = "neuf"
 word = "дев'ять"
 
-sentence = word + " signifie " + number + " en " + language + "."
+sentence = word + " signifie " + number + " en " + language + "." # "дев'ять signifie neuf en Ukrainien."
 
 # Avec str.join() (Plus efficace)
 # Array
