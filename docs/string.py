@@ -23,7 +23,9 @@ word = "дев'ять"
 
 sentence = word + " signifie " + number + " en " + language + "." # "дев'ять signifie neuf en Ukrainien."
 
-# Avec str.join() (Plus efficace)
+"""
+    Méthode .join() (Plus efficace)
+"""
 # Array
 chickens = ["poule", "œuf", "coq"]
 ' '.join(chickens)  # 'poule œuf coq'
@@ -114,4 +116,66 @@ for code_point in exercise:
 for index, code_point in enumerate(exercise):
     print(index, ": ", code_point)
 # Affiche l’index et le caractère
+
+
+"""
+    Méthode endswith() / startswith()
+"""
+# Vérifie si une chaine fini par la chaine choisise
+chaine = "bonjour"
+chaine.endswith("r")                #True
+chaine.endswith("t")                #False
+print(chaine.endswith(("r", "t")))  # True → car "r" est dans la liste
+"programmation".endswith("tion")    # True
+
+# Vérifie si une chaîne commence par la chaîne choisie
+chaine = "bonjour"
+chaine.startswith("b")                # True
+chaine.startswith("j")                # False
+print(chaine.startswith(("b", "j")))  # True → car "b" est dans la liste
+"programmation".startswith("pro")     # True
+
+
+"""
+    Méthode replace()
+"""
+texte = "Le ciel est bleu, le ciel est vaste."
+nouveau_texte = texte.replace("ciel", "soleil") # "Le soleil est bleu, le soleil est vaste."
+
+# Remplacement partiel (limité à 1 occurrence)
+texte = "chat, chat, chat"
+remplacement_limite = texte.replace("chat", "chien", 1) # "chien, chat, chat"
+
+
+"""
+    Méthode rstrip() / lstrip() / strip
+"""
+# rstrip nettoie la fin d'une chaine
+# Suppression des espaces à droite
+texte = "Bonjour     "
+texte_nettoye = texte.rstrip()  # "Bonjour"
+
+# Suppression d'un caractère spécifique à droite
+texte = "Bonjour!!!"
+texte_nettoye = texte.rstrip("!")  # "Bonjour"
+
+# Suppression partielle (ne supprime que les caractères à droite)
+texte = "!!!Bonjour!!!"
+texte_nettoye = texte.rstrip("!")  # "!!!Bonjour"
+
+# lstrip nettoie la fin d'une chaine
+# Suppression des espaces à gauche
+texte = "     Bonjour"
+texte_nettoye = texte.lstrip()  # "Bonjour"
+
+# Suppression d'un caractère spécifique à gauche
+texte = "!!!Bonjour"
+texte_nettoye = texte.lstrip("!")  # "Bonjour"
+
+# Suppression partielle (ne supprime que les caractères à gauche)
+texte = "!!!Bonjour!!!"
+texte_nettoye = texte.lstrip("!")  # "Bonjour!!!"
+
+texte = "   Bonjour   "
+texte_nettoye = texte.strip()  # "Bonjour"
 
