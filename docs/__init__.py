@@ -11,8 +11,8 @@ En exposant certaines fonctions et constantes via __all__, ce fichier facilite
 l'importation contrôlée et propre des composants principaux du package.
 """
 
-from .base01 import MA_CONSTANTE
-from .base01 import addition
-from .base01 import puissance
+from .base import MA_CONSTANTE
+from .base import addition
+from .base import puissance
 
 __all__ = ["MA_CONSTANTE", "addition", puissance]

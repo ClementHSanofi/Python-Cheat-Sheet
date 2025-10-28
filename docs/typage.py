@@ -12,4 +12,3 @@ config: dict[str, int] = {"max": 10, "min": 1}
 utilisateurs: List[str] = ["Pierre", "Paul", "Jacques"]
 score: Dict[str, int] = {"Pierre": 95, "Paul": 88, "Jacques": 75}
 coordonnees: Tuple[float, float] = (49.7, 0.7)
-
