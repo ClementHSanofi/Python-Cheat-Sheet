@@ -1,25 +1,34 @@
+# Import pour utiliser les méthode "math"
+import math
+
 # Variables immutables / mutables
 MA_CONSTANTE = "Je ne peux pas changer"
-ma_variable = "Je peu changer"
+ma_variable = "Je peux changer"
 
-# Fonctions
-def addition (a, b) :
-    """Additionne deux nombres entre eux.
+# Fonctions & utilisation de méthodes
+def addition(a: int, b: int) -> int :
+    """Additionne deux nombres.
 
-        :a: int - premier nombre
-        :b: int- second nombre
+    Args:
+        a (int): Premier nombre.
+        b (int): Second nombre.
+    
+    Returns:
+        int: Résultat de l'addition
     
     """
     return a + b 
 
-import math 
 
-def puissance (a, b) :
-    """Met le premier nombre à la puissance du second
+def puissance(a: int, b: int) -> float:
+    """Élève le premier nombre à la puissance du second.
 
-        :a: int - premier nombre
-        :b: int - second nombre
-    
+    Args:
+        a (int): Base.
+        b (int): Exposant.
+
+    Returns:
+        float: Résultat de la puissance.
     """
     return math.pow(a, b)
 
