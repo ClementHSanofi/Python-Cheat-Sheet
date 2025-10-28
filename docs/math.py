@@ -17,5 +17,13 @@ soustraction = 3 - 2      # Résultat : 1 (int)
 # Division
 division = 6 / 2          # Résultat : 3.0 (float)
 
+# Division si int nécessaire
+division = 7 // 4         # Résultat : 1 (int)
+division = 6 // 2         # Résultat : 3 (int)
+
 # Modulo
 modulo = 7 % 4            # Résultat : 3 (reste de la division entière)
+
+# Conversion int / float
+int(6 / 2)                # Résultat : 3 (int)
+float(1 + 2)              # Résultat : 3.0 (float)
