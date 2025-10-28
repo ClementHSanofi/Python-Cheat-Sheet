@@ -105,7 +105,7 @@ colors.split(',\n')  # ['rouge', 'orange', 'vert', 'violet', 'jaune']
 """
     Itération sur caractère
 """
-exercise = 'လေ့ကျင့်'
+exercise = 'bonjour'
 
 for code_point in exercise:
     print(code_point)
@@ -114,9 +114,4 @@ for code_point in exercise:
 for index, code_point in enumerate(exercise):
     print(index, ": ", code_point)
 # Affiche l’index et le caractère
-
-
-
-
-
 
