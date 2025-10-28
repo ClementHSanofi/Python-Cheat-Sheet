@@ -1,4 +1,6 @@
-# Condition 
+"""
+    Condition 
+"""
 x = 10
 
 if x > 5:
@@ -9,7 +11,7 @@ else:
     print("x est inférieur à 5")
 
 """
-    Bonnes pratiques pythonic
+    Bonnes pratiques Pythonic
 """
 
 # Expression ternaire (condition courte en une ligne)

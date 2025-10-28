@@ -1,4 +1,6 @@
-# Boolean
+"""
+    Boolean
+"""
 # Opérateurs logiques : AND
 true_variable = True and True
 false_variable = True and False
@@ -11,6 +13,9 @@ false_variable = False or False
 true_variable = not False
 false_variable = not True
 
+"""
+    Comparaisons
+"""
 # Comparaisons classiques
 a = 10
 b = 5
@@ -59,7 +64,10 @@ print(x < y < z)     # True
 print(x < y > z)     # False
 print(x > y < z)     # False
 
-# Test d'appartenance
+"""
+    Test d'appartenance
+"""
+
 fruits = ["pomme", "banane", "orange"]
 print("pomme" in fruits)         # True
 print("kiwi" not in fruits)      # True

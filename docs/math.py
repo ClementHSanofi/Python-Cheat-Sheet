@@ -1,5 +1,6 @@
-# Arithmetique
 """
+    Arithmetique
+    
     En python, l'opérateur `/` retourne toujours un float, même avec deux entiers.
     Les autres opérations retournent un float si au moins un opérande est un float.
 
