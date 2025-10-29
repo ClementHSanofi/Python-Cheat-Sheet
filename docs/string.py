@@ -1,6 +1,8 @@
 """
     Déclaration de chaines
 """
+
+# Chaines simples
 single_quoted = 'Permet d\'utiliser des "guillemets doubles" sans caractère d\'échappement.'
 double_quoted = "Permet d'utiliser des 'guillemets simples' sans caractère d'échappement."
 escapes = 'Si nécessaire, un \\ peut être utilisé comme caractère d\'échappement.'
@@ -16,16 +18,13 @@ Souvent utilisée pour les docstrings ou les tests de documentation.
 """
     Concaténation
 """
-# Avec + (pas très performant)
+# Avec + 
 language = "Ukrainien"
 number = "neuf"
 word = "дев'ять"
-
 sentence = word + " signifie " + number + " en " + language + "." # "дев'ять signifie neuf en Ukrainien."
 
-"""
-    Méthode .join() (Plus efficace)
-"""
+# Avec .join() (Plus efficace)
 # Array
 chickens = ["poule", "œuf", "coq"]
 ' '.join(chickens)  # 'poule œuf coq'
@@ -47,8 +46,7 @@ phrase = "Ceci est ma chaîne"
 #Effet créatifs
 under_words = ['under', 'current', 'sea', 'pin', 'dog', 'lay']
 separator = ' ⤴️ under'
-separator.join(under_words)
-# 'under ⤴️ undercurrent ⤴️ undersea ⤴️ underpin ⤴️ underdog ⤴️ underlay'
+separator.join(under_words) # 'under ⤴️ undercurrent ⤴️ undersea ⤴️ underpin ⤴️ underdog ⤴️ underlay'
 
 
 """
